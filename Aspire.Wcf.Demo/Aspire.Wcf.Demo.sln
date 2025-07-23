@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspire.Wcf.Demo.AppHost", "Aspire.Wcf.Demo.AppHost\Aspire.Wcf.Demo.AppHost.csproj", "{A44A6087-7A5E-400A-AAEF-057943BC8BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspire.Wcf.Demo.ServiceDefaults", "Aspire.Wcf.Demo.ServiceDefaults\Aspire.Wcf.Demo.ServiceDefaults.csproj", "{DC589065-D78D-4ACF-9180-562F3C0617EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspire.Wcf.Demo.ApiService", "Aspire.Wcf.Demo.ApiService\Aspire.Wcf.Demo.ApiService.csproj", "{607506AE-9855-48C2-B487-B4D0735082CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspire.Wcf.Demo.LegacyService", "Aspire.Wcf.Demo.LegacyService\Aspire.Wcf.Demo.LegacyService.csproj", "{D1331F30-6FC4-4311-8192-456E9DA3A715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspire.Wcf.Demo.Contracts", "Aspire.Wcf.Demo.Contracts\Aspire.Wcf.Demo.Contracts.csproj", "{1035602E-FF36-4212-8F16-DC1F7C3E3456}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A44A6087-7A5E-400A-AAEF-057943BC8BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44A6087-7A5E-400A-AAEF-057943BC8BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44A6087-7A5E-400A-AAEF-057943BC8BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44A6087-7A5E-400A-AAEF-057943BC8BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC589065-D78D-4ACF-9180-562F3C0617EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC589065-D78D-4ACF-9180-562F3C0617EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC589065-D78D-4ACF-9180-562F3C0617EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC589065-D78D-4ACF-9180-562F3C0617EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607506AE-9855-48C2-B487-B4D0735082CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607506AE-9855-48C2-B487-B4D0735082CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607506AE-9855-48C2-B487-B4D0735082CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607506AE-9855-48C2-B487-B4D0735082CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1331F30-6FC4-4311-8192-456E9DA3A715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1331F30-6FC4-4311-8192-456E9DA3A715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1331F30-6FC4-4311-8192-456E9DA3A715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1331F30-6FC4-4311-8192-456E9DA3A715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1035602E-FF36-4212-8F16-DC1F7C3E3456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1035602E-FF36-4212-8F16-DC1F7C3E3456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1035602E-FF36-4212-8F16-DC1F7C3E3456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1035602E-FF36-4212-8F16-DC1F7C3E3456}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
