@@ -2,21 +2,15 @@ using System.Diagnostics;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using Aspire.Wcf.Demo.Contracts;
+using OpenTelemetry;
 
 namespace Aspire.Wcf.Demo.ApiService;
 
-public class DingClient
+public class DingClient(IConfiguration config)
 {
-	private readonly IConfiguration _config;
-
-	public DingClient(IConfiguration config)
-	{
-		_config = config;
-	}
-
 	public string CallDing(string name)
 	{
-		var baseUri = _config
+		var baseUri = config
 			.GetSection("services:wcfservice:https")
 			.GetChildren()
 			.FirstOrDefault()
@@ -31,7 +25,7 @@ public class DingClient
 		using var scope = new OperationContextScope((IContextChannel)client);
 		OperationContext.Current.OutgoingMessageHeaders.Add(
 			MessageHeader.CreateHeader("traceparent", "", Activity.Current?.Id));
-
+		Baggage.SetBaggage("caller", "Aspire.ApiService");
 		return client.Ding(name);
 	}
 }

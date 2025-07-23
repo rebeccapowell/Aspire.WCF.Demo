@@ -12,11 +12,11 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Aspire.Wcf.Demo.ApiService\Aspire.Wcf.Demo.ApiService.csproj"/>
-        <ProjectReference Include="..\Aspire.Wcf.Demo.LegacyService\Aspire.Wcf.Demo.LegacyService.csproj" />
+        <ProjectReference Include="..\Aspire.Wcf.Demo.LegacyService\Aspire.Wcf.Demo.LegacyService.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1" />
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1"/>
     </ItemGroup>
 
 </Project>

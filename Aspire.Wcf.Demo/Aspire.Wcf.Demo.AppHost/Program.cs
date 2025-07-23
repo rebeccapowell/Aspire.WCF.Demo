@@ -1,9 +1,10 @@
+using Projects;
+
 var builder = DistributedApplication.CreateBuilder(args);
 
-var wcfService = builder.AddProject<Projects.Aspire_Wcf_Demo_LegacyService>("wcfservice")
-	.WithHttpEndpoint(name: "http", targetPort: 8080);
+var wcfService = builder.AddProject<Aspire_Wcf_Demo_LegacyService>("wcfservice");
 
-var apiService = builder.AddProject<Projects.Aspire_Wcf_Demo_ApiService>("apiservice")
+builder.AddProject<Aspire_Wcf_Demo_ApiService>("apiservice")
 	.WithHttpsHealthCheck("/health")
 	.WithReference(wcfService);
 

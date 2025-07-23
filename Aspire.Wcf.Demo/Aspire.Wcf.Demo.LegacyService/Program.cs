@@ -2,6 +2,7 @@
 
 var builder = WebApplication.CreateBuilder();
 builder.AddServiceDefaults();
+builder.Services.AddTransient<DingService>();
 
 builder.Services.AddServiceModelServices();
 builder.Services.AddServiceModelMetadata();

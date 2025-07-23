@@ -24,22 +24,23 @@ app.UseStatusCodePages();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+	app.UseSwagger();
+	app.UseSwaggerUI();
 }
 
 app.MapPost("/ding", ([FromBody] DingRequest request, [FromServices] DingClient dingClient) =>
-{
-    var ding = dingClient.CallDing(request.Name);
-    return Results.Ok(new DingResponse(ding));
-})
-.WithName("Ding")
-.Produces<DingResponse>(StatusCodes.Status200OK)
-.WithOpenApi();
+	{
+		var ding = dingClient.CallDing(request.Name);
+		return Results.Ok(new DingResponse(ding));
+	})
+	.WithName("Ding")
+	.Produces<DingResponse>()
+	.WithOpenApi();
 
 app.MapDefaultEndpoints();
 
 app.Run();
 
-record DingRequest(string Name);
-record DingResponse(string Message);
+internal record DingRequest(string Name);
+
+internal record DingResponse(string Message);

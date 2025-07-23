@@ -1,13 +1,15 @@
 ﻿using System.ServiceModel;
-using CoreWCF;
 
 namespace Aspire.Wcf.Demo.Contracts;
 
-[System.ServiceModel.ServiceContract]
+/// <summary>
+///     This is annoying that I need both here to share the contract between client and server
+/// </summary>
+[ServiceContract]
 [CoreWCF.ServiceContract] // optional if only used server-side
 public interface IDingService
 {
-	[System.ServiceModel.OperationContract]
+	[OperationContract]
 	[CoreWCF.OperationContract] // optional
 	string Ding(string name);
 }

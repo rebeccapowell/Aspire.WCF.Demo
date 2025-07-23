@@ -19,5 +19,7 @@ public class TraceContextInspector : IDispatchMessageInspector
 		return null;
 	}
 
-	public void BeforeSendReply(ref Message reply, object correlationState) { }
+	public void BeforeSendReply(ref Message reply, object correlationState)
+	{
+	}
 }
